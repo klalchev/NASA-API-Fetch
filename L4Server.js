@@ -60,9 +60,9 @@ app.post('/addPicture', addPicture);
 function addPicture(req, res){
 
     newEntry = { //what do I need to enter here to fetch the NASA data and also the image of the day?
-        startTime: req.body.startTime,
-        displayName: req.body.displayName,
-        activityID: req.body.activityID,
+        date: req.body.date,
+        explanation: req.body.explanation,
+        title: req.body.title,
         hdurl: req.body.hdurl,
         fav: req.body.fav
     }
